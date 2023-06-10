@@ -1,0 +1,230 @@
+body{
+    margin: 0;
+    font-family: Condiment, Mosterrat;
+}
+
+.content-wrapper{
+    margin: 15px auto;
+    max-width: 1200px;
+}
+
+/* Header and Nav Bar */
+
+header{
+    display: flex; 
+    justify-content: space-between; 
+    text-align: center;
+    align-items: center;
+    margin: 0;
+}
+
+h1{
+    font-family: Condiment;
+    text-transform: uppercase;
+    font-size: 48px; 
+    /* margin-right: 180px; */
+    letter-spacing: 2px;;
+}
+
+nav{
+    font-size: 12px;
+    /* margin: 0; */
+    margin-right: -300px;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    /* font-size: 20px; */
+    gap: 30px;
+    /* padding: 0; */
+    
+}
+
+nav ul li a{
+    font-family: Monsterrat;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    position: relative;
+
+
+}
+
+/* Social Media Icons */
+
+.social-icons{
+    margin:0;
+    padding-top: 25px;
+    display: flex;
+    width:46px; 
+    height: 44px;
+    gap: 15px;
+    color: black;
+   
+}
+
+
+.icons{
+    transition: ease-out .3s;
+}
+
+
+.icons:visited {
+    color:black;
+    
+}
+
+.icons:hover{
+    transform: scale(1.2)
+}
+
+nav ul li a.active:before{
+    position: absolute;
+    content: "";
+    width: 40%;
+    height: 1px;
+    border-bottom: 2px solid black;
+    bottom: -6px;;
+    
+}
+
+nav ul li a:before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    border-bottom: 2px solid rgb(142, 140, 152);
+    bottom: -6px;
+    transition: width .3s;
+    
+}
+
+
+
+nav ul li a:hover:before{
+    width:40%;
+}
+
+
+/* Selected Works */
+
+
+.recent-works{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px ;
+    gap: 80px;
+    margin: 0 auto; 
+    padding: 20px 10px;
+
+
+}
+
+.recent-works img{
+    width: 100%;
+    width: 324px;
+    height: 525px;
+    object-fit: cover;
+    
+
+}
+  
+h2{
+    margin-top: 100px;
+    text-align: center;
+    font-family: Monsterrat;
+    
+}
+
+
+
+.csec-projects{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px ;
+    gap: 80px;
+    margin: 0 auto; 
+    padding: 50px 10px;
+}
+
+.csec-projects img{
+    width: 100%;
+    width: 324px;
+    height: 525px;
+    object-fit: cover;
+    
+}
+
+form{
+    margin-top: 40px;
+    position: relative;
+    max-width: 800px;
+    font-family: Monsterrat;
+}
+
+form h1{
+    font-family: Monsterrat;
+    font-size: 25px;
+    margin-bottom:50px;
+}
+
+input[type="text"],input[type="email"]{
+    width: 80%;
+    background-color: rgb(216, 239, 224);
+    border-color: 80px rgb(18, 18, 18);
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 10px;
+    opacity: 90%;
+}
+
+
+input[type="message"]{
+    width: 80%;
+    background-color: rgb(216, 239, 224);
+    border-color: 80px rgb(18, 18, 18);
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 10px;
+    opacity: 90%;
+    height: 70px;
+}
+
+
+input[type="submit"]{
+   
+    margin-top: 20px;
+    padding: 10px 70px;
+    color: rgb(0, 0, 0);
+    background-color:  rgb(216, 239, 224);
+    border: 2px solid rgb(92, 147, 116);
+    border-radius: 5px;
+    font-size: 20px;
+    transition: background-color 0.4s ease-in-out ;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(132, 230, 174);
+    cursor: pointer;
+}
+
+
+/* About */
+
+
+.bio img{
+    margin-left: 50px;
+    margin-right :150px;
+    margin-top: 40px;
+    width: 
+}
+

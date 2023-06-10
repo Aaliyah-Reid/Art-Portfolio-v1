@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+}
+
+h1{
+    margin: 30px auto;
+    align-items: center;
+    text-align: center;
+    text-decoration: bold;
+}
